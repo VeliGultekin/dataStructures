@@ -45,7 +45,7 @@ void sirala_ve_ekle() {
         }
     }
 
-    // Tek ve çift sayýlarý ayrý ayrý ekrana yazdýrdýk
+    // Tek ve çift sayilari ayri ayri ekrana yazdirdik
     printf("Tek Sayilar: ");
     for (i = 0; i < index_tek; i++) {
         printf("%d ", tek_sayilar[i]);
@@ -65,12 +65,12 @@ void rastgele_siralama() {
 
     
     for (i = 0; i < 100; i++) {
-        liste[i] = rand() % 1000; // Rastgele 100 sayý ekledik
+        liste[i] = rand() % 1000; // Rastgele 100 sayi ekledik
     }
 
     qsort(liste, 100, sizeof(int), compare);
 
-    // Rastgele sýralanmýþ listeyi ekrana yazdýrdýk
+    // Rastgele siralanmis listeyi ekrana yazdirdik
     printf("Rastgele Siralanmis Liste: ");
     for (i = 0; i < 100; i++) {
         printf("%d", liste[i]);
@@ -99,7 +99,7 @@ struct Ogrenci ogrenci_ara(struct Ogrenci ogrenci_listesi[], int boyut, const ch
         }
     }
 
-    // Bulunamadý ise boþ bir öðrenci döndürdük
+    // Bulunamadi ise bos bir ögrenci döndürdük
     struct Ogrenci bos_ogrenci = {0, "", 0};
     return bos_ogrenci;
 }
@@ -167,7 +167,7 @@ int main() {
             ogrenci_bilgilerini_yazdir(ogrenci_listesi, ogrenci_sayisi);
             break;
         case 4:
-            // 4. Soru - Ogrenci Ara
+            // 4. Soru - Ogrenci Arama
             {
                 char aranan_isim[50];
                 printf("Aranan ogrenci ismini girin: ");
