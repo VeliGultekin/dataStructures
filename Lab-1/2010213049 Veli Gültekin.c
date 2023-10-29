@@ -32,7 +32,7 @@ void sirala_ve_ekle() {
 
     int boyut = i;
 
-    // Tek ve çift sayıları ayırmak için iki ayrı liste oluşturduk
+    // Tek ve Ã§ift sayilari ayirmak iÃ§in iki ayri liste olusturduk
     int tek_sayilar[boyut];
     int cift_sayilar[boyut];
     int index_tek = 0, index_cift = 0;
@@ -45,7 +45,7 @@ void sirala_ve_ekle() {
         }
     }
 
-    // Tek ve çift sayıları ayrı ayrı ekrana yazdırdık
+    // Tek ve Ã§ift sayÃ½larÃ½ ayrÃ½ ayrÃ½ ekrana yazdÃ½rdÃ½k
     printf("Tek Sayilar: ");
     for (i = 0; i < index_tek; i++) {
         printf("%d ", tek_sayilar[i]);
@@ -65,12 +65,12 @@ void rastgele_siralama() {
 
     
     for (i = 0; i < 100; i++) {
-        liste[i] = rand() % 1000; // Rastgele 100 sayı ekledik
+        liste[i] = rand() % 1000; // Rastgele 100 sayÃ½ ekledik
     }
 
     qsort(liste, 100, sizeof(int), compare);
 
-    // Rastgele sıralanmış listeyi ekrana yazdırdık
+    // Rastgele sÃ½ralanmÃ½Ã¾ listeyi ekrana yazdÃ½rdÃ½k
     printf("Rastgele Siralanmis Liste: ");
     for (i = 0; i < 100; i++) {
         printf("%d", liste[i]);
@@ -99,7 +99,7 @@ struct Ogrenci ogrenci_ara(struct Ogrenci ogrenci_listesi[], int boyut, const ch
         }
     }
 
-    // Bulunamadı ise boş bir öğrenci döndürdük
+    // BulunamadÃ½ ise boÃ¾ bir Ã¶Ã°renci dÃ¶ndÃ¼rdÃ¼k
     struct Ogrenci bos_ogrenci = {0, "", 0};
     return bos_ogrenci;
 }
